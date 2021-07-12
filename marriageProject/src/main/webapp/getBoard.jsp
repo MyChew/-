@@ -11,9 +11,14 @@
 <link rel="stylesheet"
 	href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" href="css/testList.css">
+<style>
+body {
+	font-family: bazzi;
+}
+</style>
 </head>
 <body>
-	<header id="header"> <%@ include file="../include/header.jsp"%>
+	<header id="header"> <%@ include file="../include/header.jsp" %>
 	</header>
 	<center>
 		<h1>후기 게시판</h1>
