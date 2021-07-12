@@ -9,7 +9,7 @@ public class JDBCUtil {
 	public static Connection getConnection() {
 		try {
 			Class.forName("com.mysql.jdbc.Driver");
-			return DriverManager.getConnection("jdbc:mysql://211.228.178.2311/marriage", "root", "1234");
+			return DriverManager.getConnection("jdbc:mysql://211.228.178.231/marriage", "root", "1234");
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
