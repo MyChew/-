@@ -1,0 +1,96 @@
+@font-face {
+	font-family: 'NEXON Lv1 Gothic OTF';
+	src:
+		url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/NEXON Lv1 Gothic OTF.woff')
+		format('woff');
+}
+
+@font-face {
+	font-family: 'NEXON Lv1 Gothic OTF Bold';
+	src:
+		url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/NEXON Lv1 Gothic OTF Bold.woff')
+		format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+
+.mypage .mybox .myheader{
+	margin-top: -31px;
+	margin-bottom: 26px;
+}
+
+.mypage {
+	width: 1500px;
+	margin: auto;
+	padding: 8% 0 0;
+}
+
+.mypage .mybox h3 {
+	font-family: 'NEXON Lv1 Gothic OTF Bold';
+	color: #91c769;
+	font-size: 25px;
+	text-align: center;
+}
+
+.mybox {
+	position: relative;
+	z-index: 1;
+	background: #e7efb8;
+	width: 400px;
+	margin: 0 auto 100px;
+	text-align: center;
+	padding: 50px;
+	box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0
+		rgba(0, 0, 0, 0.24);
+}
+
+.myform {
+	font-family: 'NEXON Lv1 Gothic OTF';
+	color: black;
+}
+
+.myform label {
+	display: inline-block;
+	width: 100px;
+	text-align: left;
+	line-height: 50px;
+}
+
+.myc {
+	width: 200px;
+	height: 45px;
+	margin: auto;
+	border: 0;
+	margin: 0 0 15px;
+	padding: 15px;
+	box-sizing: border-box;
+	font-size: 14px;
+}
+
+.myg {
+	display: inline-block;
+	position: relative;
+	left: -58px;
+}
+
+.mym {
+	display: inline-block;
+	position: relative;
+	left: -39.5px;
+}
+
+.myb {
+	font-family: 'NEXON Lv1 Gothic OTF';
+	font-weight: bold;
+	width: 25%;
+	height: 45px;
+	border: 0;
+	font-size: 14px;
+	background: #ffffff;
+	text-align: center;
+}
+
+.mys {
+	width: 200px;
+	height: 45px;
+}
