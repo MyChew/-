@@ -3,7 +3,7 @@ package com.springbook.biz.review_board;
 import java.sql.Date;
 
 public class Review_BoardVO {
-	private int seqd;
+	private int seq;
 	private String title;
 	private String writer;
 	private String content;
