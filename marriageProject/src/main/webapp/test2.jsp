@@ -102,10 +102,10 @@
 							</td>
 						</tr>
 					</table>
-				</form>
 					<br><br>
 					<input type="reset" class="test2b" value="다시 작성">
 					<input type="submit" class="test2b" value="저장"> 
+				</form>
 			</center>
 		</div>
 	</section>
