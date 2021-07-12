@@ -9,8 +9,8 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.SessionAttributes;
 
-import com.springbook.biz.Test1Service;
-import com.springbook.biz.Test1VO;
+import com.springbook.biz.test1.Test1Service;
+import com.springbook.biz.test1.Test1VO;
 
 
 

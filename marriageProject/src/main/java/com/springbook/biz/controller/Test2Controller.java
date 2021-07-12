@@ -8,8 +8,8 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.SessionAttributes;
 
-import com.springbook.biz.Test2Service;
-import com.springbook.biz.Test2VO;
+import com.springbook.biz.test2.Test2Service;
+import com.springbook.biz.test2.Test2VO;
 
 @Controller
 @SessionAttributes("test2")

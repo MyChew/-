@@ -1,32 +1,32 @@
-<%@page contentType="text/html; charset=EUC-KR"%>
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
-"http://www.w3.org/TR/html4/loose.dtd">
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<!DOCTYPE html>
 <html>
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=EUC-KR">
-<title>�α���</title>
+<title>LOGIN</title>
 </head>
+<link rel="stylesheet" type="text/css" href="css/login.css"/>
 <body>
-	<center>
-		<h1>�α���</h1>
-		<hr>
-		<form action="login.do" method="post">
-			<table border="1" cellpadding="0" cellspacing="0">
-				<tr>
-					<td bgcolor="orange">���̵�</td>
-					<td><input type="text" name="id" value="${user.id }" /></td>
-				</tr>
-				<tr>
-					<td bgcolor="orange">��й�ȣ</td>
-					<td><input type="password" name="password" value="${user.password }"/></td>
-				</tr>
-				<tr>
-					<td colspan="2" align="center"><input type="submit"
-						value="�α���" /></td>
-				</tr>
-			</table>
-		</form>
-		<hr>
-	</center>
+	<header>
+		<%@ include file="../include/header.jsp"%>
+	</header>
+	<section class="login-section">
+	<div class="login-page">
+		<div class="login-box">
+			<div class="login">
+				<h3>LOGIN</h3>
+				<p>로그인 하려면 아이디와 비밀번호를 입력하세요.</p>
+			</div>
+			<form class="login-form">
+				<input type="text" placeholder="ID" />
+				<input type="password" placeholder="password" />
+				<input class="loginb" type="submit" value="LOGIN">
+			</form>
+		</div>
+				<p class="message">	아직 회원이 아니신가요? <a href="join.jsp">회원가입</a></p>
+	</div>
+	</section>
+	<footer id="footer">
+       <%@ include file="../include/footer.jsp"%>   
+    </footer>
 </body>
 </html>

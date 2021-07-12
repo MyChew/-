@@ -1,0 +1,95 @@
+/* Simple reset */
+html, body, #footer *{ margin: 0; padding: 0; display: block; color: #000; font-family: "Open Sans", sans-serif; font-size: inherit; font-weight: normal; text-decoration: none; line-height: 1; outline: 0; } 
+ 
+/* FontAwesome */
+@font-face {
+   font-family: 'Bazzi';
+   src:
+      url('https://blog.kakaocdn.net/dn/bjoXD7/btqGurD1WiL/E1LJJ0yMKLw9hqEmUkSns1/Bazzi.ttf?attach=1&knm=tfile.ttf')
+      format('ttf'),
+      
+} 
+/* Queries */
+    /* Min */
+    @media (min-width: 0){ 
+        html{ font-size: 50%; } 
+            body{ min-width: 200px; background: #fff;  height:80px; } 
+                #footer{ background: #f9f8f7; } 
+                    #resources{  } 
+                        #resources > h2{ display: none; }
+                        #modules{ padding: 2em; margin-bottom: -2em; } 
+                            #modules > h2{ display: none; } 
+                            #modules > .module{  } 
+                                #modules > .module > h3{ margin-bottom: 2em; color: #91c769; font-size: 1.25em; font-weight: 600; text-transform: uppercase; } 
+                                #modules > .module > p{ margin-bottom: 2em; color: #ddd; line-height: 1.25; } 
+                                #modules > .module > ul{ margin-bottom: 2em; } 
+                                    #modules > .module > ul > li{ color: #ddd; line-height: 1.25; } 
+                                        #modules > .module > ul > li > a{ color: #ccd674; line-height: 1.25; } 
+                                        #modules > .module > ul > li.mail > a:before{ content: "\f003"; margin: 0 0.5em 0 0; display: inline-block; color: #ddd; font-family: "FontAwesome"; text-align: center; } 
+                                        #modules > .module > ul > li.phone > a:before{ content: "\f095"; margin: 0 0.5em 0 0; display: inline-block; color: #ddd; font-family: "FontAwesome"; text-align: center; } 
+                                        #modules > .module > ul > li.facebook > a:before{ content: "\f09a"; margin: 0 0.5em 0 0; display: inline-block; color: #ddd; font-family: "FontAwesome"; text-align: center; } 
+                                        #modules > .module > ul > li.twitter > a:before{ content: "\f099"; margin: 0 0.5em 0 0; display: inline-block; color: #ddd; font-family: "FontAwesome"; text-align: center; } 
+                                        #modules > .module > ul > li > a:hover{ color: #ccd674; } 
+                    #signature{  } 
+                    #legal{ padding: 2em 4em; background: #fff; } 
+                        #legal > p{ font-size: 0.75em; text-align: center; color: #ddd; } 
+                            #legal > p > a{ display: inline; color: #ccd674; line-height: 1.25; text-decoration: underline; } 
+                            #legal > p > a:hover{ color: #ccd674; } 
+    }
+    /* Bricks */
+    @media (min-width: 200px){ 
+        html{ font-size: 4vw; } 
+            body{  } 
+    } 
+    /* Smartphones */
+    @media (min-width: 300px){ 
+        html{  } 
+            body{  } 
+    } 
+    /* Retina */
+    @media (min-width: 479px){ 
+        html{ font-size: 120%; } 
+            body{  } 
+    } 
+    /* Tablet */
+    @media (min-width: 768px){ 
+        html{  } 
+            body{  } 
+                    #resources{  } 
+                        #modules{ overflow: hidden; } 
+                            #modules > .module{ float: left; width: 50%; } 
+                                #modules > .module > h3{ text-align: left; } 
+                                #modules > .module:nth-child(odd) > h3{ text-align: right; } 
+                                #modules > .module > p{  }  
+                                #modules > .module:nth-child(odd) > p{ text-align: right; } 
+                                #modules > .module > ul{  } 
+                                    #modules > .module > ul > li{  } 
+                                    #modules > .module:nth-child(odd) > ul > li{ text-align: right; } 
+                                        #modules > .module > ul > li > a{  } 
+    } 
+    /* Desktop */
+    @media (min-width: 979px){ 
+        html{  } 
+            body{  } 
+                    #resources{  } 
+                        #modules{  } 
+                            #modules > .module{ width: 25%; } 
+                                #modules > .module > h3{ text-align: left; } 
+                                #modules > .module:nth-child(odd) > h3{ text-align: left; } 
+                                #modules > .module > p{  } 
+                                #modules > .module:nth-child(odd) > p{ text-align: left; } 
+                                #modules > .module > ul{  } 
+                                    #modules > .module > ul > li{  } 
+                                    #modules > .module:nth-child(odd) > ul > li{ text-align: left; } 
+                                        #modules > .module > ul > li > a{  } 
+    } 
+    /* Widescreen */
+    @media (min-width: 1800px){ 
+        html{ font-size: 1.067vw; } 
+            body{  } 
+    } 
+    /* Max */
+    @media (min-width: 2800px){ 
+        html{ font-size: 186.7%; } 
+            body{  } 
+    } 

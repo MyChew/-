@@ -1,41 +1,86 @@
-<%@page contentType="text/html; charset=EUC-KR"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+	pageEncoding="UTF-8"%>
+
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
 "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
-<title>»õ±Ûµî·Ï</title>
+<title>í›„ê¸° ê²Œì‹œíŒ ê¸€ ë“±ë¡ í˜ì´ì§€</title>
+<link href="/BoardWeb/src/main/webapp/mainstyle.css" rel="stylesheet"
+	type="text/css">
+<link rel="stylesheet"
+	href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="css/testList.css">
+<style>
+table {
+	align-items: center;
+	text-align: center;
+}
+</style>
 </head>
 <body>
+	<header id="header"> <%@ include file="../include/header.jsp"%>
+	</header>
 	<center>
-		<h1>±Û µî·Ï</h1>
-		<a href="logout.do">Log-out</a>
+
+		<div id="comp-kq7bu2hr2" class="_2bafp" data-testid="richTextElement">
+			<h3 class="font_3" style="text-align: center; font-size: 88px;">
+				<span style="font-size: 72px;"><span
+					style="font-family: bazzi;">â€‹í›„ê¸°ê²Œì‹œíŒâ€‹â€‹</span></span>
+			</h3>
+		</div>
 		<hr>
-		<form action="insertBoard.do" method="post" enctype="multipart/form-data">
-			<table border="1" cellpadding="0" cellspacing="0">
-				<tr>
-					<td bgcolor="orange" width="70">Á¦¸ñ</td>
-					<td align="left"><input type="text" name="title" /></td>
-				</tr>
-				<tr>
-					<td bgcolor="orange">ÀÛ¼ºÀÚ</td>
-					<td align="left"><input type="text" name="writer" size="10" /></td>
-				</tr>
-				<tr>
-					<td bgcolor="orange">³»¿ë</td>
-					<td align="left"><textarea name="content" cols="40" rows="10"></textarea></td>
-				</tr>
-				<tr>
-					<td bgcolor="orange" width="70">¾÷·Îµå</td><td align="left">
-					<input type="file" name="uploadFile"/></td>
-				</tr>
-				<tr>
-					<td colspan="2" align="center"><input type="submit"
-						value=" »õ±Û µî·Ï " /></td>
-				</tr>
-			</table>
+		<form action="insertBoard.do" method="post"
+			enctype="multipart/form-data">
+
+
+			<div
+				style="width: 50%; height: 100%; padding-top: 10px; padding-bottom: 10px; border: 0; background-color: #FBFFFB;">
+
+			<table border="0" cellpadding="0" cellspacing="0" width="850px" style="margin: 10px;">
+					<tr>
+						<td>
+						<td bgcolor="#E1F7E3" width="200px">&nbsp;&nbsp;ì œëª©&ensp;&nbsp;&nbsp;</td>
+						<td align="center"><textarea name="title"
+								cols="60" rows="2" style="width:500px;height:20px;"/></textarea></td>
+					</tr>
+					<tr>
+						<table border="0" cellpadding="2" cellspacing="4" width="900px" style="margin-bottom: 15px; ">
+							<td bgcolor="#F3DBF2">ì‘ì„±ì</td>
+							<td align="left">${board.writer }</td>
+
+							<td bgcolor="#F2F0D9">ì‘ì„±ì¼ì</td>
+							<td align="left">${board.regDate }</td>
+
+							<td bgcolor="#C5E8E6">ì¡°íšŒìˆ˜</td>
+							<td align="left">${board.cnt }</td>
+							</tr>
+						</table>
+						<table>
+							<tr>
+								<td align="center">ë‚´ìš©</td>
+								<td><textarea name="content" cols="100" rows="30"></textarea></td>
+							</tr>
+
+							<tr style="margin-bottom: 8px;">
+								<td bgcolor="#E2F6FA" width="200">ì—…ë¡œë“œ</td>
+								<td align="right"><input type="file" name="uploadFile" /></td>
+							</tr>
+
+							<tr style="margin-bottom: 8px;">
+								<td colspan="3" align="center"><input type="submit"
+									value=" ë“±ë¡" /></td>
+							</tr>
+						</table>
+				</table>
+			</div>
 		</form>
 		<hr>
-		<a href="getBoardList.do">±Û ¸ñ·Ï °¡±â</a>
+		<div style="text-align: center;">
+			<a href="getBoardList.do">ëª©ë¡</a>
+		</div>
 	</center>
+	<footer id="footer"> <%@ include file="../include/footer.jsp"%>
+	</footer>
 </body>
 </html>

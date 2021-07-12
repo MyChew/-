@@ -1,55 +1,78 @@
-<%@page contentType="text/html; charset=EUC-KR"%>
+<%@page contentType="text/html; charset=UTF-8"%>
 <%@taglib uri="http://java.sun.com/jstl/core_rt" prefix="c"%>
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
 "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=EUC-KR">
-<title>±Û ¸ñ·Ï</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>í›„ê¸° ê²Œì‹œíŒ</title>
+<link href="/BoardWeb/src/main/webapp/mainstyle.css" rel="stylesheet"
+	type="text/css">
+<link rel="stylesheet"
+	href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="css/testList.css">
 </head>
 <body>
-	<center>
-		<h1>±Û ¸ñ·Ï</h1>
-		<h3>${userName }´Ô!
-			°Ô½ÃÆÇ¿¡ ¿À½Å°É È¯¿µÇÕ´Ï´Ù...<a href="logout.do">Log-out</a>
-		</h3>
-		<!-- °Ë»ö ½ÃÀÛ -->
-		<form action="getBoardList.do" method="post">
-			<table border="1" cellpadding="0" cellspacing="0" width="700">
+    <header id="header">
+		<%@ include file="../include/header.jsp"%>
+    </header>
+
+		<!--  í›„ê¸° ê²Œì‹œíŒ -->
+		<div id="comp-kq7bu2hr2" class="_2bafp" data-testid="richTextElement">
+			<h3 class="font_3" style="text-align: center; font-size: 88px;">
+				<span style="font-size: 72px;"><span
+					style="font-family: bazzi;">â€‹í›„ê¸° ê²Œì‹œíŒâ€‹â€‹</span></span>
+			</h3>
+		</div>
+
+		<div style="font-family: bazzi; font-size: 30px; text-align: center;">
+			<!--  ê²Œì‹œê¸€ ë¦¬ìŠ¤íŠ¸ í‘œ -->
+			<table style="border-spacing: 5px;" width="900px" height="120px"
+				align="center" text-align="center;">
+
 				<tr>
-					<td align="right">
-					<select name="searchCondition">
-						<c:forEach items="${conditionMap }" var="option">
-							<option value="${option.value }">${option.key }
-						</c:forEach>							
-					</select> 
-					<input name="searchKeyword" type="text" /> 
-					<input type="submit" value="°Ë»ö" /></td>
+					<th bgcolor="#E1F7E3" width="100px">ê¸€ ë²ˆí˜¸</th>
+					<th bgcolor="#F3DBF2" width="450px">ê¸€ ì œëª©</th>
+					<th bgcolor="#DCDFF4" width="100px">ì‘ì„±ì</th>
+					<th bgcolor="#F2F0D9" width="150px">ì‘ì„±ì¼ì</th>
+					<th bgcolor="#C5E8E6" width="100px">ì¡°íšŒìˆ˜</th>
+					<th bgcolor="#BBCFED" width="100px">ì¶”ì²œìˆ˜</th>
 				</tr>
+
+				<c:forEach items="${BoardList }" var="Board">
+					<tr>
+						<td>${Board.seq }</td>
+						<td align="left"><a
+							href="getBoard.do?seq=${Board.seq }">
+								${Board.title }</a></td>
+						<td>${Board.writer }</td>
+						<td>${Board.regDate }</td>
+						<td>${Board.cnt }</td>
+						<td>${Board.recmd }</td>
+					</tr>
+				</c:forEach>
 			</table>
-		</form>
-		<!-- °Ë»ö Á¾·á -->
-		<table border="1" cellpadding="0" cellspacing="0" width="700">
-			<tr>
-				<th bgcolor="orange" width="100">¹øÈ£</th>
-				<th bgcolor="orange" width="200">Á¦¸ñ</th>
-				<th bgcolor="orange" width="150">ÀÛ¼ºÀÚ</th>
-				<th bgcolor="orange" width="150">µî·ÏÀÏ</th>
-				<th bgcolor="orange" width="100">Á¶È¸¼ö</th>
-			</tr>
-			<c:forEach items="${boardList }" var="board">
-				<tr>
-					<td>${board.seq }</td>
-					<td align="left"><a href="getBoard.do?seq=${board.seq }">
-							${board.title }</a></td>
-					<td>${board.writer }</td>
-					<td>${board.regDate }</td>
-					<td>${board.cnt }</td>
-				</tr>
-			</c:forEach>
-		</table>
-		<br> <a href="insertBoard.jsp">»õ±Û µî·Ï</a>
-	</center>
+			<!-- ê²€ìƒ‰ ì‹œì‘ -->
+			<form action="getBoardList.jsp" method="post">
+				<table border="0" cellpadding="0" cellspacing="0" width="900px"
+					align="center" text-align="center;">
+					<tr>
+						<td align="center" width="900px" colspan="3"><select
+							name="searchCondition">
+								<option value="TITLE">ì œëª©
+								<option value="CONTENT">ë‚´ìš©
+						</select> <input name="searchKeyword" type="text" /> <input type="submit"
+							value="ê²€ìƒ‰" /></td>
+						<td></td>
+
+					</tr>
+				</table>
+			</form>
+			<!-- ê²€ìƒ‰ ì¢…ë£Œ -->
+			<br>
+			<br> <a href="insertBoard.jsp">ìƒˆ ê¸€ ë“±ë¡</a>
+			<footer id="footer"> <%@ include
+				file="../include/footer.jsp"%> </footer>
 </body>
 </html>
