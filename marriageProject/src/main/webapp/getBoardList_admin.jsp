@@ -19,7 +19,7 @@
 	<header id="header"> <%@ include file="../include/header.jsp"%></header>
 	
 		<h3 style="text-align: center; font-size: 45px;">
-			​후기 게시판​​
+			​후기 게시판하나둘셋​​
 		</h3>
 
 		<div style="width: 50%; height: 100%; padding-top: 10px; padding-bottom: 10px; border: 0; background-color: #FBFFFB;">
