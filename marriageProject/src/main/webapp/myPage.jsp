@@ -90,7 +90,7 @@
 				</form>
 			</div>
 		</div>
-    <footer id="footer1">
+    <footer id="footer">
        <%@ include file="../include/footer.jsp"%>   
     </footer>
 </body>
