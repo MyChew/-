@@ -1,19 +1,18 @@
 /* Simple reset */
+<<<<<<< HEAD
 html, body, #footer *{ margin: 0; padding: 0; display: block; color: #000; font-family: Bazzi, sans-serif; font-size: inherit; font-weight: normal; text-decoration: none; line-height: 1; outline: 0; } 
+=======
+.footer-body, #footer *{ margin: 0; padding: 0; display: block; color: #fff; font-family: "Open Sans", sans-serif; font-size: inherit; font-weight: normal; text-decoration: none; line-height: 1; outline: 0; } 
+>>>>>>> refs/remotes/origin/master
  
 /* FontAwesome */
-@font-face {
-   font-family: 'Bazzi';
-   src:
-      url('https://blog.kakaocdn.net/dn/bjoXD7/btqGurD1WiL/E1LJJ0yMKLw9hqEmUkSns1/Bazzi.ttf?attach=1&knm=tfile.ttf')
-      format('ttf'),
-      
-} 
+    @font-face{ font-family: "FontAwesome"; src: url("https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/fonts/fontawesome-webfont.eot?v=4.7.0"); src: url("https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/fonts/fontawesome-webfont.eot?#iefix&v=4.7.0") format("embedded-opentype"), url("https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/fonts/fontawesome-webfont.woff2?v=4.7.0") format("woff2"), url("https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/fonts/fontawesome-webfont.woff?v=4.7.0") format("woff"), url("https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/fonts/fontawesome-webfont.ttf?v=4.7.0") format("truetype"), url("https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/fonts/fontawesome-webfont.svg?v=4.7.0#fontawesomeregular") format("svg"); font-weight: normal; font-style: normal; } 
+ 
 /* Queries */
     /* Min */
     @media (min-width: 0){ 
-        html{ font-size: 50%; } 
-            body{ min-width: 200px; background: #fff;  height:80px; } 
+        .footer-body{ font-size: 50%; } 
+           /*  body{ min-width: 200px; background: #fff;  height:100px; }  */
                 #footer{ background: #f9f8f7; } 
                     #resources{  } 
                         #resources > h2{ display: none; }
@@ -38,23 +37,19 @@ html, body, #footer *{ margin: 0; padding: 0; display: block; color: #000; font-
     }
     /* Bricks */
     @media (min-width: 200px){ 
-        html{ font-size: 4vw; } 
-            body{  } 
+         .footer-body{ font-size: 4vw; } 
     } 
     /* Smartphones */
     @media (min-width: 300px){ 
-        html{  } 
-            body{  } 
+       .footer-body{  } 
     } 
     /* Retina */
     @media (min-width: 479px){ 
-        html{ font-size: 120%; } 
-            body{  } 
+        .footer-body{ font-size: 120%; } 
     } 
     /* Tablet */
     @media (min-width: 768px){ 
-        html{  } 
-            body{  } 
+        .footer-body{  } 
                     #resources{  } 
                         #modules{ overflow: hidden; } 
                             #modules > .module{ float: left; width: 50%; } 
@@ -69,8 +64,7 @@ html, body, #footer *{ margin: 0; padding: 0; display: block; color: #000; font-
     } 
     /* Desktop */
     @media (min-width: 979px){ 
-        html{  } 
-            body{  } 
+        .footer-body{  } 
                     #resources{  } 
                         #modules{  } 
                             #modules > .module{ width: 25%; } 
@@ -85,11 +79,9 @@ html, body, #footer *{ margin: 0; padding: 0; display: block; color: #000; font-
     } 
     /* Widescreen */
     @media (min-width: 1800px){ 
-        html{ font-size: 1.067vw; } 
-            body{  } 
+        .footer-body{ font-size: 1.067vw; } 
     } 
     /* Max */
     @media (min-width: 2800px){ 
-        html{ font-size: 186.7%; } 
-            body{  } 
+        .footer-body{ font-size: 186.7%; } 
     } 

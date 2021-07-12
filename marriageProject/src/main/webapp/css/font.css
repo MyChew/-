@@ -1,0 +1,20 @@
+@font-face {
+    font-family: Bazzi; 
+    src: url("C:\Users\PC\Desktop\project\css\Bazzi.ttf");
+    }
+    
+   body {
+	font-family: Bazzi;
+	font-size: 20px;
+	
+}
+.boardname {
+	font-family: Bazzi;
+	font-size: 70px;
+	font-weight: bold;
+}
+
+.teduli{
+	width: 50%; height: 100%; padding-top: 10px; padding-bottom: 10px; border: 0; background-color: #FBFFFB;
+	text-align: center;
+}
