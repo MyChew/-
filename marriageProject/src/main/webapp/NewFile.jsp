@@ -7,7 +7,8 @@
 <meta charset="UTF-8">
 <title>Insert title here</title>
 </head>
-<body><center>
+<body>
+	<center>
 		<div style="width:50%; height:100%; padding-top:10px; padding-bottom:10px; border:1px solid red ;">
 	
 			<table style="align-content: center; text-align: center;" border="1"

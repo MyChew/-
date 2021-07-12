@@ -1,4 +1,4 @@
-package com.springbook.view.test;
+package com.springbook.biz.controller;
 
 import java.io.IOException;
 
