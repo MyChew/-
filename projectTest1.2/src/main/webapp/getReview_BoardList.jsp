@@ -13,7 +13,7 @@
 	<center>
 		<header><%@ include file="../include/header.jsp"%></header>
 
-		<h3 class="boardname">​후기 게시판</h3>
+		<h3 class="boardname">​123후기 게시판123</h3>
 
 		<!--  게시글 리스트 표 -->
 		<div class="teduli" style="width: 900px;">
