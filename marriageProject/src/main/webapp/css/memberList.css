@@ -1,0 +1,82 @@
+@font-face {
+	font-family: 'HeirofLightBold';
+	src:
+		url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-07@1.0/HeirofLightBold.woff')
+		format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'ELAND_Choice_M';
+	src:
+		url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts-20-12@1.0/ELAND_Choice_M.woff')
+		format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'ELAND_Choice_B';
+	src:
+		url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts-20-12@1.0/ELAND_Choice_B.woff')
+		format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+
+.member-thead {
+	background: #c7df95;
+	height: 65px;
+	font-size: 16px;
+}
+
+.member-table {
+	text-align: center;
+	margin-bottom: 1rem;
+	color: #212529;
+	margin: auto;
+	font-family: 'ELAND_Choice_M';
+	border-collapse: collapse;
+	text-indent: initial;
+	border-spacing: 2px;
+	box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0
+		rgba(0, 0, 0, 0.24);
+}
+
+.member-tbody td {
+	border: none;
+	padding: 30px;
+	font-size: 14px;
+	background: #fff;
+	border-bottom: 0 solid #f8f9fd;
+}
+
+.member-content H2, p {
+	text-align: center;
+	color: black;
+}
+
+.member-header {
+	font-family: 'HeirofLightBold';
+	font-size: 18px;
+}
+
+.member-content p {
+	font-family: 'ELAND_Choice_B';
+}
+
+.member-section {
+	height: 800px;
+}
+
+.memberb {
+	font-family: 'NEXON Lv1 Gothic OTF';
+	font-weight: bold;
+	width: 100px;
+	height: 45px;
+	border: 0;
+	font-size: 14px;
+	background: #e7efb8;
+	text-align: center;
+}
