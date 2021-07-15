@@ -16,11 +16,11 @@
 		<h3 class="boardname">​공지 게시판</h3>
 
 		<!--  게시글 리스트 표 -->
-		<div class="teduli">
-			<table style="border-spacing: 7px;" width="900px" height="50px"
+		<div class="teduli" style="width: 870px">
+			<table style="border-spacing: 7px;" width="850px" height="50px"
 				align="center" text-align="center;">
 				<tr>
-					<th bgcolor="#E1F7E3" width="100px">글 번호</th>
+					<th bgcolor="#F2E5D7" width="100px">글 번호</th>
 					<th bgcolor="#F3DBF2" width="450px">글 제목</th>
 					<th bgcolor="#DCDFF4" width="100px">작성자</th>
 					<th bgcolor="#F2F0D9" width="150px">작성일자</th>
@@ -54,18 +54,9 @@
 
 				<br>
 			</table>
-			<a href="test1.jsp">이상형테스트</a>
-			<a href="test2.jsp">이상형테스트</a>
-			<form action="getReview_BoardList.do">
-			<input type = "submit" value="후기게시판"></form>
 			<c:if test="${user1 eq 'admin' }">
 				<br>
 				<a href="insertNotice_Board.jsp">등록</a>
-				<form action="getTest1List.do">
-				<input type = "submit" value="이상형테스트 결과보기">
-				</form>
-				<form action="getTest2List.do">
-				<input type = "submit" value="연애스타일 테스트 결과보기"></form>
 			</c:if>
 		</div>
 

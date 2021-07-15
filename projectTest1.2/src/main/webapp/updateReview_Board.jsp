@@ -26,17 +26,17 @@
 					</tr>
 					<tr>
 						<table border="0" cellpadding="0" cellspacing="0" width="800px"
-							align="center"">
+							align="center" style="margin-bottom: 10px;">
 							<td bgcolor="#F3DBF2">작성자</td>
 							<td align="left">${review_Board.writer }</td>
 
 							<td bgcolor="#F2F0D9">작성일자</td>
 							<td align="left">${review_Board.regDate }</td>
 
-							<td bgcolor="#C5E8E6">조회수&nbsp;</td>
-							<td align="left">${review_Board.cnt }</td>
+							<td bgcolor="#C5E8E6">조회수&nbsp;&nbsp;</td>
+							<td align="left">${review_Board.cnt }&nbsp;&nbsp;&nbsp;&nbsp;</td>
 
-							<td bgcolor="#BBCFED">추천수&nbsp;</td>
+							<td bgcolor="#BBCFED">추천수</td>
 							<td align="left">${review_Board.recmd }</td>
 						</table>
 					</tr>
@@ -60,7 +60,7 @@
 		<hr>
 		<a href="getReview_BoardList.do">목록</a>&nbsp;&nbsp;&nbsp; <a
 			href="deleteReview_Board.do?seq=${review_Board.seq }">삭제</a>&nbsp;&nbsp;&nbsp;
-		<footer > <%@ include file="../include/footer.jsp"%>
+		<footer> <%@ include file="../include/footer.jsp"%>
 		</footer>
 	</center>
 </body>

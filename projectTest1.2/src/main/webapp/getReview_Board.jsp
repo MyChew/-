@@ -15,25 +15,25 @@
 	<center>
 		<h1 class="boardname">후기 게시판</h1>
 		<hr>
-		<div class="teduli" style="width: 900px;">      
+		<div class="teduli" style="width: 850px;">      
 		<form action="updateReview_Board.jsp" method="post">
 			<input name="seq" type="hidden" value="${review_Board.seq}" />
-			<table border="0" cellpadding="0" cellspacing="0" width="900px" style="margin: 10px;">
+			<table border="0" cellpadding="0" cellspacing="0" width="830px" style="margin: 10px;">
 				<tr>
 					<td bgcolor="#E1F7E3" width="200px"> &nbsp;&nbsp;제목&nbsp;&nbsp;</td>
 					<td align="center" >${review_Board.title }</td>
 				</tr>
 				
 				<tr>
-					<table border="0" cellpadding="2" cellspacing="4" width="800px" style="margin-bottom: 15px; ">
+					<table border="0" cellpadding="2" cellspacing="5" width="800px" style="margin-bottom: 15px; ">
 						<td bgcolor="#F3DBF2" >작성자</td>
 						<td align="left">${review_Board.writer }</td>
 
 						<td bgcolor="#F2F0D9">작성일자</td>
 						<td align="left">${review_Board.regDate }</td>
 
-						<td bgcolor="#C5E8E6">조회수&nbsp;</td>
-						<td align="left">${review_Board.cnt }</td>
+						<td bgcolor="#C5E8E6">조회수</td>
+						<td align="left">${review_Board.cnt }&nbsp;&nbsp;&nbsp;&nbsp;</td>
 						
 						<td bgcolor="#DCDFF4">추천수&nbsp;</td>
 						<td align="left">${review_Board.recmd }</td>

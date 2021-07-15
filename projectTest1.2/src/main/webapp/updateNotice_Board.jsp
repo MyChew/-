@@ -15,14 +15,14 @@
 	<center>
 		<h1 class="boardname">공지사항 게시판</h1>
 		<hr>
-		<div class="teduli">    
+		<div class="teduli" style="width: 850px">    
 		<form action="updateNotice_Board.do" method="post">
 			<input name="seq" type="hidden" value="${notice_Board.seq}" />
 			<table border="0" cellpadding="0" cellspacing="0" width="850px" >
 			<table border="0" align="center" cellspacing="5">
 				<tr>
-					<td bgcolor="#E1F7E3" width="220px" > 제목</td>
-					<td align="center"><input style="font-family: bazzi; font-size:25px; text-align:center; width:500px; height:20px;" name="title" type="text" 
+					<td bgcolor="#E1F7E3" width="200px" > 제목</td>
+					<td align="center"><input style="font-family: bazzi; font-size:25px; text-align:center; width:520px; height:20px;" name="title" type="text" 
 						value="${notice_Board.title }" /></td>
 				</tr>
 			</table>	

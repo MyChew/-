@@ -17,21 +17,21 @@
 		<!-- <form action="insertReview_Board.do" method="post"
 			enctype="multipart/form-data"> -->
 		<form action="insertReview_Board.do" method="post">
-			<div class="teduli" style="width: 900px;">
-				<table style="border-spacing: 7px;" boder="1" width="900px"
+			<div class="teduli" style="width: 780px;">
+				<table style="border-spacing: 7px;" boder="1" width="780px"
 					align="center" text-align="center;">
 					<tr>
-						<td bgcolor="#E1F7E3" width="200px">&nbsp;&nbsp;제목&emsp;&nbsp;&nbsp;</td>
+						<td bgcolor="#D3F3E9" width="200px">&nbsp;&nbsp;제목&emsp;&nbsp;&nbsp;</td>
 						<td align="left"><textarea id="insertarea" name="title"
 								cols="80" rows="1" /></textarea></td>
 					</tr>
 					<tr>
-						<td bgcolor="ABD6AF">내용</td>
+						<td bgcolor="#B5EAFB">내용</td>
 						<td align="left"><textarea id="insertarea" name="content"
 								cols="80" rows="18"></textarea></td>
 					</tr>
 					<tr style="margin-bottom: 8px;">
-						<td bgcolor="#E2F6FA" width="200">업로드</td>
+						<td bgcolor="#CCDCF9" width="200">업로드</td>
 						<td align="right"><input type="file" name="uploadFile" /></td>
 					</tr>
 					<tr>

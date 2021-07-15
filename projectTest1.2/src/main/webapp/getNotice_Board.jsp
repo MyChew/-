@@ -10,22 +10,22 @@
 <link href="css/font.css" rel="stylesheet" type="text/css">
 </head>
 <body>
-	<header id="header"> <%@ include file="../include/header.jsp"%>
+	<header> <%@ include file="../include/header.jsp"%>
 	</header>
 	<center>
 		<h1 class="boardname">공지사항 게시판</h1>
 		<hr>
-		<div class="teduli">      
+		<div class="teduli" style="width: 850px;">      
 		<form action="updateNotice_Board.jsp" method="post">
 			<input name="seq" type="hidden" value="${notice_Board.seq}" />
-			<table border="0" cellpadding="0" cellspacing="0" width="850px" style="margin: 10px;">
+			<table border="0" cellpadding="0" cellspacing="0" width="750px" style="margin: 10px;">
 				<tr>
 					<td bgcolor="#E1F7E3" width="200px"> &nbsp;&nbsp;제목&nbsp;&nbsp;</td>
 					<td align="center" >${notice_Board.title }</td>
 				</tr>
 				
 				<tr>
-					<table border="0" cellpadding="2" cellspacing="4" width="900px" style="margin-bottom: 15px; ">
+					<table border="0" cellpadding="2" cellspacing="4" width="850px" style="margin-bottom: 15px; ">
 						<td bgcolor="#F3DBF2" >작성자</td>
 						<td align="left">${notice_Board.writer }</td>
 

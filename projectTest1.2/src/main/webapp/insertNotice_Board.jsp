@@ -14,16 +14,16 @@
 		<h3 class="boardname">​공지 게시판 [관리자]</h3>
 
 		<form action="insertNotice_Board.do" method="post">
-			<div class="teduli" >
+			<div class="teduli"  style="width: 700px">
 				<table style="border-spacing: 7px;" boder="1" width="700px"
 				 align="center" text-align="center;">
 					<tr>
-						<td bgcolor="ABD6AF" style="width: 150px;">제목</td>
+						<td bgcolor="#D3F3E9" style="width: 150px;">제목</td>
 						<td align="left"><textarea id="insertarea" name="title"
 								cols="80" rows="1" /></textarea></td>
 					</tr>
 					<tr>
-						<td bgcolor="ABD6AF">내용</td>
+						<td bgcolor="#B5EAFB">내용</td>
 						<td align="left"><textarea id="insertarea" name="content"
 								cols="80" rows="18"></textarea></td>
 					</tr>
